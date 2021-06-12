@@ -63,35 +63,22 @@ Several options exist to customize the SSL certificate or force the creation of 
 
 
 
-The following list describes the list of arguments that you can use with the PowerShell script:
+# The following list describes the list of arguments that you can use with the PowerShell script:
 
-# ConfigureRemotingForAnsible.ps1 Argument List
+ConfigureRemotingForAnsible.ps1 Argument List
 
+    -EnableCredSSP ( Enables the CredSSP authentication protocol.)
 
--EnableCredSSP
-Enables the CredSSP authentication protocol.
+    -DisableBasicAuth ( Disables Basic authentication. This option is recommended since Basic authentication is the least secure WinRM authentication method. )
 
--DisableBasicAuth
-Disables Basic authentication. This option is recommended since Basic authentication is the
-least secure WinRM authentication method.
+    -CertValidityDays ( Specifies the expiration of the self-signed SSL certificate created for HTTPS. The default validity is 1095 days (3 years).)
 
+    -ForceNewSSLCert (Forces the creation of a new SSL certificate.)
 
--CertValidityDays
-Specifies the expiration of the self-signed SSL certificate created for HTTPS. The default
-validity is 1095 days (3 years).
+    -SubjectName (Specifies the CN (Common Name) of the SSL certificate. Defaults to the host name.)
 
--ForceNewSSLCert
-Forces the creation of a new SSL certificate.
+    -SkipNetworkProfileCheck ( Allows for enabling PS Remoting without checking the network profile.)
 
-
--SubjectName
-Specifies the CN (Common Name) of the SSL certificate. Defaults to the host name.
-
--SkipNetworkProfileCheck
-Allows for enabling PS Remoting without checking the network profile.
-
-
--Verbose
-Enables verbose output. This option is useful for debugging.
+    -Verbose ( Enables verbose output. This option is useful for debugging.)
 
 
