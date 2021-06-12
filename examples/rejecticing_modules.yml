@@ -1,0 +1,14 @@
+---
+filter_version: '1.0'
+module_blacklist:
+  # List the modules to blacklist here
+  #- easy_install
+  #- s3
+  #- yum
+
+
+# Rejecting modules
+#If you want to avoid using certain modules, you can add them to a reject list to prevent Ansible 
+#from loading them. To reject plugins, create a yaml configuration file. The default location for this
+#file is /etc/ansible/plugin_filters.yml. You can select a different path for the reject list using 
+#the PLUGIN_FILTERS_CFG setting in the defaults section of your ansible.cfg.
