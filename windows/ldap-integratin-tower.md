@@ -1,10 +1,12 @@
 # LDAP USER SEARCH
 
-[
- "OU=Users,DC=pg,DC=lab",
- "SCOPE_SUBTREE",
- "(uid=%(user)s)"
-]
+
+     [
+      "OU=Users,DC=pg,DC=lab",
+      "SCOPE_SUBTREE",
+      "(uid=%(user)s)"
+      ]
+
 
     LDAP search query to find users. Any user that matches the given pattern will be able to login to Tower.
     The user should also be mapped into a Tower organization (as defined in the AUTH_LDAP_ORGANIZATION_MAP setting).
