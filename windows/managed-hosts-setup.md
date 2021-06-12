@@ -69,9 +69,11 @@ ConfigureRemotingForAnsible.ps1 Argument List
 
     -EnableCredSSP ( Enables the CredSSP authentication protocol.)
 
-    -DisableBasicAuth ( Disables Basic authentication. This option is recommended since Basic authentication is the least secure WinRM authentication method. )
+    -DisableBasicAuth 
+    ( Disables Basic authentication. This option is recommended since Basic authentication is the least secure WinRM authentication method. )
 
-    -CertValidityDays ( Specifies the expiration of the self-signed SSL certificate created for HTTPS. The default validity is 1095 days (3 years).)
+    -CertValidityDays 
+    ( Specifies the expiration of the self-signed SSL certificate created for HTTPS. The default validity is 1095 days (3 years).)
 
     -ForceNewSSLCert (Forces the creation of a new SSL certificate.)
 
