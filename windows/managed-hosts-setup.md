@@ -43,6 +43,7 @@ Find the script in the official repository
       https://github.com/ansible/ansible/blob/devel/examples/scripts/ConfigureRemotingForAnsible.ps1. ( official) 
 
 The ConfigureRemotingForAnsible.ps1 script performs the following actions.
+
      1. Confirms PowerShell version 3 or higher is installed.
      2. Runs the WinRM service, if not already running, and configures it to automatically start on boot.
      3. Enables PowerShell Remoting and an SSL listener.
@@ -50,9 +51,10 @@ The ConfigureRemotingForAnsible.ps1 script performs the following actions.
      5. Optionally configures basic authentication or CredSSP. This is discussed in detail below.
      6. Configures the Windows firewall for WinRM connections over both HTTP and HTTPS.
 
-Run ConfigureRemotingForAnsible.ps1 as an Administrator with the appropriate options for your environment.
-we are uses  the -DisableBasicAuth and -EnableCredSSP options as a security preference.
-ConfigureRemotingForAnsible.ps1 also creates a self-signed certificate for HTTP
+Run ConfigureRemotingForAnsible.ps1 as an Administrator with the appropriate options for your environment.we are uses  the
+-DisableBasicAuth and -EnableCredSSP options as a security preference. ConfigureRemotingForAnsible.ps1 also creates a self-signed 
+certificate for HTTP
+
 
 
 
