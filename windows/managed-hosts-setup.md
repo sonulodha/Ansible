@@ -54,7 +54,13 @@ The ConfigureRemotingForAnsible.ps1 script performs the following actions.
 Run ConfigureRemotingForAnsible.ps1 as an Administrator with the appropriate options for your environment.we are uses  the
   
     -DisableBasicAuth and -EnableCredSSP options as a security preference.
-ConfigureRemotingForAnsible.ps1 also creates a self-signed  certificate for HTTP
+
+    ConfigureRemotingForAnsible.ps1 also creates a self-signed  certificate for HTTP
+
+    ConfigureRemotingForAnsible.ps1 also creates a self-signed certificate for HTTPS communication. 
+
+Several options exist to customize the SSL certificate or force the creation of a new one
+
 
 
 
