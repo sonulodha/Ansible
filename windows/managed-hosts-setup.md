@@ -52,8 +52,9 @@ The ConfigureRemotingForAnsible.ps1 script performs the following actions.
      6. Configures the Windows firewall for WinRM connections over both HTTP and HTTPS.
 
 Run ConfigureRemotingForAnsible.ps1 as an Administrator with the appropriate options for your environment.we are uses  the
--DisableBasicAuth and -EnableCredSSP options as a security preference. ConfigureRemotingForAnsible.ps1 also creates a self-signed 
-certificate for HTTP
+  
+    -DisableBasicAuth and -EnableCredSSP options as a security preference.
+ConfigureRemotingForAnsible.ps1 also creates a self-signed  certificate for HTTP
 
 
 
