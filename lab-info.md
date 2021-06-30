@@ -16,8 +16,8 @@
 
 Before you begin.
       
-     1.   Log in as the ubuntu user on your cloud-node and run lab-start-ansible. This setup script ensures that the control node and  managed host,
-          workstation ( control-node ) node1/2/3/4(managed hosts ), is reachable on the network.
+     1.   Log in as the ubuntu user on your cloud-node and run lab-start-ansible. This setup script ensures that the 
+          control node and  managed host,workstation ( control-node ) node1/2/3/4(managed hosts ), is reachable on the network.
 
      2.   Log in as the kiosk  user on workstation 
      
@@ -36,7 +36,8 @@ Before you begin.
           Follow the instructions below to edit that file so that it lists the managed host
           node1 and node2 ( user ip address of managed hosts ) as a member of the host group rpmfamily.
           node3 and node4 ( user ip address of managed hosts ) as a member of the host group debfamily.
-          (The exercise will show you how to do this for now, but the course will cover how static inventory files work in the next chapter.)
+          (The exercise will show you how to do this for now, but the course will cover how static inventory 
+          files work in the next chapter.)
           
           5.1 Create and change directory to the /home/kiosk/dep-install directory.
           
@@ -54,5 +55,3 @@ Before you begin.
               10.0.0.4
            
 
-    #a)  Write  your first ansible project  as user kiosk  in ~/ansible/playbook in workstaion.lab.example.com virtual machine
-#b)  All cofiguration changes are to be made in /etc/ansible/ansible.cfg
